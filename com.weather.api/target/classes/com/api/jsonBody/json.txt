@@ -1,0 +1,77 @@
+{	
+	 "login":
+		 {
+   	     "sessionid":"0000",
+         "command":"Login",
+         "entitytype":"System",
+         "parameters":
+             {
+			 "UserName":"Admin",
+			 "Password":"fz;1234"
+		     }
+	     }
+
+     "Logout":
+         {
+		  "sessionid":"f1491d8abef00c6abz",
+		  "command":"Logout",
+		  "entitytype":"System",
+		  "parameters":null
+         }
+
+    "WithoutUserName":
+		{
+		"sessionid":"0000",
+		"command":"Login",
+		"entitytype":"System",
+		"parameters":{
+			"UserName":"",
+			"Password":"fz;1234"
+		  }
+        }
+
+    "WithoutPassword":
+		{
+		"sessionid":"0000",
+		"command":"Login",
+		"entitytype":"System",
+		"parameters":{
+		"UserName":"Admin",
+		"Password":""
+          }
+        }
+        
+    "ImproperPassword":
+        {
+		"sessionid":"0000",
+		"command":"Login",
+		"entitytype":"System",
+		"parameters":{
+		"UserName":"Admin",
+		"Password":"1234567"
+		}
+		}
+		
+		"ImproperUserName":
+		{
+		"sessionid":"0000",
+		"command":"Login",
+		"entitytype":"System",
+		"parameters":{
+		"UserName":"wrongUser",
+		"Password":"fz;1234"
+		}
+		}
+		
+	"WithoutUserNameAndPassword":
+		{
+		"sessionid":"0000",
+		"command":"Login",
+		"entitytype":"System",
+		"parameters":{
+		"UserName":"",
+		"Password":""
+		}
+		}
+
+}
